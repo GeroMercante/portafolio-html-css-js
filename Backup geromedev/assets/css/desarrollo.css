@@ -1,0 +1,282 @@
+@font-face {
+    font-family: Sohne-kursiv-s;
+    src: url(../tipografia/Sohne-LeichtKursiv.otf);
+}
+
+/* * Letter bolder * */
+@font-face {
+    font-family: Sohne-kursiv-xl;
+    src: url(../tipografia/Sohne-HalbfettKursiv.otf);
+}
+
+@font-face {
+    font-family: Atena;
+    src: url(../tipografia/Athena\ Rustic.ttf);
+}
+
+/* * ESTILOS GLOBALES * */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    transition: all .3s;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3 h4,
+h5,
+h6,
+p,
+a,
+button {
+    font-family: Sohne-kursiv-s;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border: none;
+}
+
+img,
+video {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-primary: #2a2f44;
+    --color-secondary: #04f08e;
+    --color-complementary: #1d6246;
+    --color-bg: ;
+    --background-dark: #2d3548;
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+    --width-container: 1200px;
+}
+
+/* linear-gradient(200deg, #000000 0%, #002715 40%, #002715 57%, #000000 138%) */
+
+.desarrollo-gm{
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.izq{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    background: #000;
+}
+
+.der{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    background-image: radial-gradient(#000000 -10%, #002715 -10%, #002715 -13%, #000000 58%);
+}
+
+
+.introduction-gm{
+    color: #fff;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    font-size: 20px;
+    z-index: 2;
+}
+
+.introduction-gm i{
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    letter-spacing: -2px;
+    color: #04f08e;
+}
+
+.title-dgm{
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    font-size: 60px;
+    z-index: 2;
+    font-family: Sohne-kursiv-xl;
+}
+
+.title-dgm span{
+    color: var(--color-secondary);
+    animation: luzTech 5s linear infinite;
+}
+
+@keyframes luzTech {
+    0%, 100%{
+        text-shadow:  0 0px #04f08e, 0 0 0px #04f08e, 0 0 0px #04f08e;
+    }
+    50%{
+        text-shadow: 0 0 10px #04f08e, 0 0 40px #04f08e, 0 0 80px #04f08e;
+    }
+}
+
+
+.desa-2{
+    width: 100%;
+    height: 50vh;
+    background: var(--color-black);
+}
+
+.tech-awards{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.tech-cont{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.text-e{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.text-e h2{
+    color: var(--color-white);
+    font-size: 44px;
+    width: fit-content;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+.text-e p{
+    color: #888;
+}
+
+.desarrollo-gm-2{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    background-image: radial-gradient(#000000 0%, #002715 0%, #002715 6%, #000000 72%);
+}
+
+.contain-box-2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.contain-box-2 h1{
+    color: var(--color-white);
+    font-size: 40px;
+    width: 800px;
+}
+
+.contain-box-2 p{
+    width: 900px;
+    color: #888;
+    font-size: 20px;
+}
+
+
+
+
+
+.video-contain-section{
+    width: 100%;
+    height: 120vh;
+    position: relative;
+    
+}
+
+.video-3d h1{
+    position: absolute;
+    color: var(--color-white);
+    z-index: 3;
+    font-size: 70px;
+    left: 40%;
+    animation: luzTech 5s linear infinite;
+    top: 40%;
+    color: #04f08e;
+    text-transform: uppercase;
+}
+
+
+.video{
+    position: relative;
+    z-index: 1;
+}
+
+.video-contain-section::before{
+    content: '';
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.contain-secion-7{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.contain-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.contain-img img{
+    position: absolute;
+    left: 0;
+    object-fit: contain;
+}
+
+.desarrollo-gm-3{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
